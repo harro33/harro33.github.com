@@ -1,0 +1,303 @@
+---
+---
+
+@import "hydeout";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&Fira+Sans:wght@400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+}
+
+
+
+@media (min-width: 49rem) {
+  html {
+      font-size: 16px;
+  }
+}
+
+body {
+  background: #454440;
+  font-feature-settings: "kern", "liga", "pnum";
+}
+
+.content {
+  color: #333;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size:2em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size:1.6em;
+  font-weight:500;
+}
+
+h4 {
+  font-size:1.2em;
+  font-weight:300;
+  margin-top: 0;
+}
+
+h5 {
+
+}
+
+blockquote {
+  font-style: italic;
+  font-family: "lora", serif;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+
+#sidebar {
+
+  top: 0;
+
+  p.lead {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  a.page-link {
+    font-weight: 300;
+    &.active {
+      font-weight: 700;
+    }
+
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 200;
+  }
+
+}
+
+.gradient_divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.gradient_divider_dark {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+
+.site-title a {
+  font-family: 'Fira Sans', Sans-Serif;
+  font-size: 2.15rem;
+  font-weight: 400;
+}
+
+.profile-image {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  object-position: 50% 65%;
+  border-radius: 4px;
+  float: right;
+  margin: 0 0 10px 20px;
+  filter: grayscale(60%);
+}
+
+.header-image {
+  border-radius: 4px;
+}
+
+
+.about-section { padding-top:1.2rem; padding-bottom:2.5rem; width:100%; }
+.about-section h5 { margin-top: .2em; text-transform: uppercase;}
+.about-block { display: flex; flex-wrap: wrap;}
+.about-role-block { width: 30%; display:flex; flex-direction: column; padding-bottom: 1em;}
+@media (max-width: 30rem) , (min-width: 49rem) and (max-width: 55rem) {
+  .about-role-block { width: 100%;  }
+}
+.about-category { margin-bottom:0.7em; border-bottom: solid 1px #333;}
+.about-role { font-size:1em; font-weight:700; padding-right: 0.5rem; }
+.about-degree { font-size:1em; font-weight:400; margin-bottom: 1.5rem;}
+.about-organisation { padding: 0.5rem 0; flex-basis: 100%;}
+.about-dates { font-weight:300; }
+.about-description { }
+.about-list { margin: 0.5em 0; padding-inline-start: 1.6rem }
+.about-description-block { width: 70%; margin: 0; padding-inline-start: 1.6rem; margin-bottom:2rem; }
+.about-divider {
+ margin: 1rem 15% 1rem 10%;
+ border: 0;
+ height: 1px;
+ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));}
+
+
+.goodreads {
+  max-width: 100vw;
+  font-size: 14px;
+}
+
+.goodreads {
+  img {
+    display: inline;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.goodreads center a img, .gr_grid_container .gr_grid_branding {
+  display: none !important;
+}
+
+
+.gr_custom_container_1402638062, .gr_custom_container_1403441794, #gr_grid_widget_1585982269 {
+  margin: 3rem 0 0 0;
+}
+
+.gr_custom_container_1402638062, .gr_custom_container_1403441794 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 0 2rem
+}
+
+.gr_custom_header_1402638062, .gr_custom_header_1403441794 {
+  font-size:1.6em;
+  grid-column: 1 / 3;
+  margin-bottom: 2rem;
+}
+
+.gr_custom_each_container_1402638062, .gr_custom_each_container_1403441794 {
+  margin-bottom:20px;
+  font-size:78%;
+  height:90px;
+  @media (max-width: 40rem), (max-width: 60rem) and (min-width: 49rem) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.gr_custom_book_container_1402638062, .gr_custom_book_container_1403441794 {
+  position:relative;
+  display:inline;
+  float:left;
+  margin-right:20px;
+  height:90px;
+}
+
+.gr_custom_rating_1402638062, .gr_custom_rating_1403441794 {
+  position:relative;
+  display:block;
+  margin-bottom:3px;
+}
+
+.gr_custom_title_1402638062, .gr_custom_title_1403441794 {
+  position:relative;
+  display:block;
+}
+
+.gr_custom_author_1402638062, .gr_custom_author_1403441794, .gr_custom_author_1403443140, .gr_custom_author_1403443284 {
+  position:relative;
+  display:block;
+}
+
+.gr_grid_container {
+  /* customize grid container div here. eg: width: 500px; */
+}
+
+.gr_grid_book_container {
+  /* customize book cover container div here */
+  float: left;
+  width: 39px;
+  height: 60px;
+  padding: 2px 2px;
+  overflow: hidden;
+  img {
+    border-radius: 2px;
+  }
+}
+
+
+.gallery {
+
+  .masonry-wrapper {
+    padding: 1.5em;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .masonry {
+    columns: 1;
+    column-gap: 10px;
+  }
+  .masonry-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+  }
+  .masonry-content {
+    filter: saturate(10%);
+    transition: filter .25s ease-in-out;
+
+    &:hover {
+      filter: saturate(70%);
+    }
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+      columns: 2;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      columns: 3;
+    }
+  }
+  .masonry-item, .masonry-content {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .masonry-item {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+    transition: filter .25s ease-in-out;
+  }
+  .masonry-item:hover {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+  }
+  .masonry-footer {
+    font-size: .75em;
+    opacity: .25;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-bottom: -1.5em;
+    transition: opacity 1s ease-in-out;
+  }
+  .masonry-footer a {
+    color: currentColor;
+  }
+  .masonry-footer:hover, .masonry-footer:active, .masonry-footer:focus {
+    opacity: .75;
+  }
+
+}
+
+.quote {
+  margin: 2rem 0;
+}
