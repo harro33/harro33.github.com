@@ -60,14 +60,15 @@ blockquote {
   letter-spacing: 0.3px;
 }
 
-.quote-author {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
+
 
 
 
 #sidebar {
+
+  #subscribe-link {
+    display: none;
+  }
 
   top: 0;
 
@@ -300,4 +301,10 @@ blockquote {
 
 .quote {
   margin: 2rem 0;
+}
+
+
+.quote-author {
+  font-size: 0.9rem;
+  font-weight: 500;
 }

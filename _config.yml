@@ -14,5 +14,8 @@ listium_username: Marc
 
 
 remote_theme: fongandrew/hydeout
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
+
+gems:
+- jekyll-email-protect
