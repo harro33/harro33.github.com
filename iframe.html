@@ -15,10 +15,24 @@ sidebar_link: false
   lacinia
   eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
 <br />
-<iframe style="width: min(600px, 100%); height: min(600px, 80vh); border: 1px solid #ccc; box-shadow: 0px 2px 5px #eee;" frameborder="0"
-  src="https://nxt.listium.com/@Marc/3802/test-list-crawling-locations?embed=true"
-  scrolling="yes"></iframe>
+  <input type="text" style="width: 100%" placeholder="https://nxt.listium.com/@Marc/3883/demo-video-review-list-on-nxt" id="inputNxt">
+  <button type="button" onclick="getInputValueNxt();">Load NXT List</button>
+  <p></p>
+  <iframe id="videoNxt"
+    style="width: min(600px, 100%); height: min(600px, 80vh); border: 1px solid #ccc; box-shadow: 0px 2px 5px #eee;"
+    frameborder="0" src="https://nxt.listium.com/@Marc/3883/demo-video-review-list-on-nxt?embed=true" scrolling="yes"></iframe>
+
+  <script>
+    function getInputValueNxt() {
+      // Selecting the input element and get its value 
+      let inputValNxt = document.getElementById("inputNxt").value;
+      // Displaying the value
+      document.getElementById("videoNxt").src = inputValNxt+"?embed=true";
+    }
+  </script>
+  <br />
 <br />
+<p></p>
 <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus.
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac
   lectus.</p>
@@ -39,9 +53,27 @@ sidebar_link: false
   lacinia
   eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.</p>
 <br />
-<iframe style="width: min(600px, 100%); height: min(600px, 80vh); border: 1px solid #ccc; box-shadow: 0px 2px 5px #eee;" frameborder="0"
-  src="http://192.168.86.50:3010/@marclocalgmail/21/xbox-series-xs-game-list-local?embed=true" scrolling="yes"></iframe>
+
+  <input type="text" style="width: 100%" placeholder="http://192.168.86.50:3010/@marclocalgmail/42/demo-trx-4-video-reviews" id="inputLocal">
+  <button type="button" onclick="getInputValueLocal();">Load Local List</button>
+  <p></p>
+  <iframe id="videoLocal"
+    style="width: min(600px, 100%); height: min(600px, 80vh); border: 1px solid #ccc; box-shadow: 0px 2px 5px #eee;"
+    frameborder="0" src="http://192.168.86.50:3010/@marclocalgmail/42/demo-trx-4-video-reviews?embed=true"
+    scrolling="yes"></iframe>
+  
+  <script>
+    function getInputValueLocal() {
+      // Selecting the input element and get its value 
+      let inputValLocal = document.getElementById("inputLocal").value;
+      // Displaying the value
+      document.getElementById("videoLocal").src = inputValLocal + "?embed=true";
+    }
+  </script>
+
 <br />
+<br />
+<p></p>
   <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus.
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac
   lectus.</p>
@@ -56,17 +88,10 @@ sidebar_link: false
 <h2>YouTube Playlist</h2>
 <h4>(for demonstration)</h4>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtIoEhHSbQeACcXSW27yvnkYSjEpiXYji"
-  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<div style="width: 100%; overflow: hidden;">  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtIoEhHSbQeACcXSW27yvnkYSjEpiXYji"
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <br />
 <hr />
 <br />
-
-<h2>YouTube Video</h2>
-<h4>(for demonstration)</h4>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q2mMbxUIhB0" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
-
