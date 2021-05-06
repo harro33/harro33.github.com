@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar_link: false
-permalink: /styles/
+permalink: /styles
 title: Styles
 ---
 
