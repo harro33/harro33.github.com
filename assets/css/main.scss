@@ -353,15 +353,21 @@ margin-bottom: 0.6em;
   }
   .masonry-item {
     display: inline-block;
+    position: relative;
     vertical-align: top;
     margin-bottom: 10px;
-  }
-  .masonry-content {
-    filter: saturate(10%);
-    transition: filter .25s ease-in-out;
-
+    transition: transform 2s ease-in-out;
     &:hover {
-      filter: saturate(70%);
+      transform: scale(1.4);
+      z-index: 100;
+    }
+  }
+
+  .masonry-content {
+    filter: saturate(20%);
+    transition: filter .5s ease-in-out;
+    &:hover {
+      filter: saturate(90%);
     }
   }
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
