@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "The Positives of Sole-Founder Startups (Draft)"
+title:  "The Positives of Sole-Founder Startups"
 ---
-
-<em>[This is a draft post, seeking feedback.]</em>
-
-***
 
 * Do not remove this line (it will not be displayed)
 {:toc}
