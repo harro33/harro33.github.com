@@ -28,6 +28,10 @@ body {
   color: #333;
 }
 
+.page .content ul {
+  padding-inline-start: 20px;
+}
+
 .page .content li + li {
   margin-top: 0.5rem;
 }
