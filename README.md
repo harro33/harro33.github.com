@@ -1,3 +1,9 @@
+## Reminders for marcharrison.net
+
+- run with `bundle exec jekyll serve`, not just jekyll serve
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/harro33/harro33.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
